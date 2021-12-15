@@ -31,7 +31,7 @@ function questions () {
     console.log(special)
 
     var responses = {
-    lenth: length,
+    length: length,
     uppercase: uppercase,
     lowercase: lowercase,
     special: special
@@ -76,7 +76,7 @@ function generatePassword(){
   console.log(possiblePassword);
 
   for (var i=0; i<options.length; i++){
-    finalPassword += possiblePassword(Math.floor(Math.random() * possiblePassword.length))
+    finalPassword += possiblePassword[Math.floor(Math.random() * possiblePassword.length)]
   }
   console.log(finalPassword);
   return finalPassword;
